@@ -1,4 +1,4 @@
-package com.example.android2lresson2dz.ui.adapter
+package com.example.android2lresson2dz.ui.adapters
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -17,5 +17,4 @@ class OnBoardViewPagerAdapter(fragment: Fragment): FragmentStateAdapter(fragment
             putInt(ARG_ONBOARD_PAGE_POSITION, position)
         }
     }
-
 }

@@ -10,7 +10,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.viewpager2.widget.ViewPager2
 import com.example.android2lresson2dz.R
 import com.example.android2lresson2dz.databinding.FragmentOnBoardBinding
-import com.example.android2lresson2dz.ui.adapter.OnBoardViewPagerAdapter
+import com.example.android2lresson2dz.ui.adapters.OnBoardViewPagerAdapter
 
 class OnBoardFragment : Fragment() {
 
@@ -28,15 +28,10 @@ class OnBoardFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         initialize()
         setupListener()
-        dots()
-        next()
     }
 
-    private fun initialize() {
+    private fun initialize() = with(binding){
         binding.viewPager2.adapter = OnBoardViewPagerAdapter(this@OnBoardFragment)
-    }
-
-    private fun dots() = with(binding) {
         dotsIndicator.attachTo(viewPager2)
     }
 
@@ -49,6 +44,7 @@ class OnBoardFragment : Fragment() {
         binding.btnInput.setOnClickListener {
             findNavController().navigate(R.id.action_onBoardFragment_to_noteAppFragment)
         }
+        next()
     }
 
     private fun next() = with(binding) {
