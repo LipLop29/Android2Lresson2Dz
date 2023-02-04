@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Android2Lresson2Dz</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="skip">Skip</string>
+    <string name="skip2">Пропустить</string>
+    <string name="input">Начать работу</string>
+    <string name="text">text</string>
+</resources>
