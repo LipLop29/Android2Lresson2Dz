@@ -21,10 +21,7 @@ class MainActivity : AppCompatActivity() {
         val navHostFragment =
             supportFragmentManager.findFragmentById(R.id.my_nav_host_fragment) as NavHostFragment
         navController = navHostFragment.navController
-    }
 
-    override fun onStart() {
-        super.onStart()
         if (PreferenceHelper.safeBool) {
             navController.navigate(R.id.noteAppFragment)
         } else {

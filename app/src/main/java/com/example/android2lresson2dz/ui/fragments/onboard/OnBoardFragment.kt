@@ -36,7 +36,6 @@ class OnBoardFragment : Fragment() {
         binding.viewPager2.adapter = OnBoardViewPagerAdapter(this@OnBoardFragment)
         dotsIndicator.attachTo(viewPager2)
         PreferenceHelper.unit(requireContext())
-
     }
 
     private fun setupListener() = with(binding.viewPager2) {
@@ -72,6 +71,7 @@ class OnBoardFragment : Fragment() {
             }
         })
     }
+
     private fun open() {
         PreferenceHelper.safeBool = true
     }

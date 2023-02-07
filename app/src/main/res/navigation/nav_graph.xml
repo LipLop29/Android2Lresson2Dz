@@ -9,14 +9,15 @@
         android:id="@+id/onBoardFragment"
         android:name="com.example.android2lresson2dz.ui.fragments.onboard.OnBoardFragment"
         android:label="fragment_on_board"
-        tools:layout="@layout/fragment_on_board" >
+        tools:layout="@layout/fragment_on_board">
         <action
             android:id="@+id/action_onBoardFragment_to_noteAppFragment"
-            app:destination="@id/noteAppFragment" />
+            app:destination="@id/noteAppFragment"
+            app:popUpTo="@id/noteAppFragment" />
     </fragment>
     <fragment
         android:id="@+id/noteAppFragment"
         android:name="com.example.android2lresson2dz.ui.fragments.notapp.NoteAppFragment"
         android:label="fragment_note_app"
-        tools:layout="@layout/fragment_note_app" />
+        tools:layout="@layout/fragment_note_app"/>
 </navigation>
