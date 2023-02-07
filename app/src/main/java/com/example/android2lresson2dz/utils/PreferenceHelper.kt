@@ -12,6 +12,6 @@ object PreferenceHelper {
     }
 
     var safeBool: Boolean
-        get() = sharedPreference.getBoolean("kay", false)
-        set(value) = sharedPreference.edit().putBoolean("kay", value).apply()
+        set(value) = sharedPreference.edit().putBoolean("key", value).apply()
+        get() = sharedPreference.getBoolean("key", false)
 }
