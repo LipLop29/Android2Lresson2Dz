@@ -45,7 +45,7 @@ class OnBoardFragment : Fragment() {
             }
         }
         binding.btnInput.setOnClickListener {
-            findNavController().navigate(R.id.action_onBoardFragment_to_noteAppFragment)
+            findNavController().navigate(R.id.action_onBoardFragment_to_signinsFragment)
         }
         next()
     }
@@ -73,6 +73,6 @@ class OnBoardFragment : Fragment() {
     }
 
     private fun open() {
-        PreferenceHelper.safeBool = true
+        PreferenceHelper.onBoard = true
     }
 }

@@ -22,9 +22,14 @@ class MainActivity : AppCompatActivity() {
             supportFragmentManager.findFragmentById(R.id.my_nav_host_fragment) as NavHostFragment
         navController = navHostFragment.navController
 
-        if (PreferenceHelper.safeBool) {
+        if (PreferenceHelper.onBoard && PreferenceHelper.signIn) {
             navController.navigate(R.id.noteAppFragment)
-        } else {
+        } else if (PreferenceHelper.onBoard) {
+            navController.navigate(R.id.signInFragment)
+        }
+        else if (PreferenceHelper.signIn){
+            navController.navigate(R.id.noteAppFragment)
+        }else {
             navController.navigate(R.id.onBoardFragment)
         }
     }

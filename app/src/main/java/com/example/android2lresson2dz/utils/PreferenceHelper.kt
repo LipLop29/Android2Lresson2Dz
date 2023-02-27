@@ -11,7 +11,11 @@ object PreferenceHelper {
         sharedPreference = context.getSharedPreferences("settings", Context.MODE_PRIVATE)
     }
 
-    var safeBool: Boolean
+    var onBoard: Boolean
         set(value) = sharedPreference.edit().putBoolean("key", value).apply()
         get() = sharedPreference.getBoolean("key", false)
+
+    var signIn: Boolean
+        set(value) = sharedPreference.edit().putBoolean("key1", value).apply()
+        get() = sharedPreference.getBoolean("key1", false)
 }

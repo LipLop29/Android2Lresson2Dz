@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1035910688654",
+    "project_id": "android2lresson2dz-b09ea",
+    "storage_bucket": "android2lresson2dz-b09ea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1035910688654:android:62fc68c3b0c8b18a957edf",
+        "android_client_info": {
+          "package_name": "com.example.android2lresson2dz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1035910688654-so71dm9vm80h364ibi5b1gauq58fk5uv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgwNj6XyGFBivUmR6-n_RsOChp5BtYNyY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1035910688654-so71dm9vm80h364ibi5b1gauq58fk5uv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -11,13 +11,41 @@
         android:label="fragment_on_board"
         tools:layout="@layout/fragment_on_board">
         <action
-            android:id="@+id/action_onBoardFragment_to_noteAppFragment"
-            app:destination="@id/noteAppFragment"
-            app:popUpTo="@id/noteAppFragment" />
+            android:id="@+id/action_onBoardFragment_to_signinsFragment"
+            app:destination="@id/signInFragment"
+            app:popUpTo="@id/onBoardFragment"
+            app:popUpToInclusive="true"/>
     </fragment>
     <fragment
         android:id="@+id/noteAppFragment"
         android:name="com.example.android2lresson2dz.ui.fragments.notapp.NoteAppFragment"
         android:label="fragment_note_app"
-        tools:layout="@layout/fragment_note_app"/>
+        tools:layout="@layout/fragment_note_app">
+        <action
+            android:id="@+id/action_noteAppFragment_to_detailNotFragment"
+            app:destination="@id/detailNotFragment" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/detailNotFragment"
+        android:name="com.example.android2lresson2dz.ui.fragments.notapp.detail.DetailNotFragment"
+        android:label="fragment_detail_not"
+        tools:layout="@layout/fragment_detail_not" >
+
+        <action
+            android:id="@+id/action_detailNotFragment_to_noteAppFragment"
+            app:destination="@id/noteAppFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.example.android2lresson2dz.ui.fragments.signin.SignInFragment"
+        android:label="fragment_signins"
+        tools:layout="@layout/fragment_sign_in" >
+        <action
+            android:id="@+id/action_signinsFragment_to_noteAppFragment"
+            app:destination="@id/noteAppFragment"
+            app:popUpTo="@id/onBoardFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
 </navigation>

@@ -6,5 +6,20 @@
     <string name="skip2">Пропустить</string>
     <string name="input">Начать работу</string>
     <string name="text">text</string>
-    <string name="konechnaya">Конечная</string>
+    <string name="notes">Заметки</string>
+    <string name="Search_notes">Поиск заметок</string>
+    <string name="_17_21">17:21</string>
+    <string name="_30_may">30 may</string>
+    <string name="title">Title</string>
+    <string name="gotovo">Готово</string>
+    <string name="code">code</string>
+    <string name="_996">+996</string>
+    <string name="description">Description</string>
+    <string name="text1">Text :</string>
+    <string name="data">data</string>
+    <string name="time">time</string>
+    <string name="Регистрация_по_номеру">Регистрация по номеру</string>
+    <string name="Ваш_код">Ваш код</string>
+    <string name="Получить_код">Получить код</string>
+    <string name="Подтвердить">Подтвердить</string>
 </resources>

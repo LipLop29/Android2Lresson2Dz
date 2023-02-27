@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".ui.fragments.notapp.detail.DetailNotFragment">
+
+    <ImageView
+        android:id="@+id/arrow_left"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="22dp"
+        android:src="@drawable/arrowleft"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tv_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/_30_may"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/arrow_left"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextClock
+        android:id="@+id/tc_timee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/_17_21"
+        android:textColor="#878787"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/tv_data"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/btn_ready"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/gotovo"
+        android:textColor="#D88B02"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/et_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/black"
+        android:hint="@string/title"
+        android:textColor="@color/white"
+        android:textColorHint="#838383"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@+id/tc_timee"
+        tools:ignore="Autofill,TextFields" />
+
+    <EditText
+        android:id="@+id/et_description"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginStart="20dp"
+        android:backgroundTint="@color/black"
+        android:hint="@string/description"
+        android:paddingBottom="450dp"
+        android:textColor="@color/white"
+        android:textColorHint="#838383"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/et_title"
+        tools:ignore="Autofill,TextFields" />
+
+
+    <Button
+        android:id="@+id/btn_1"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="34dp"
+        android:background="@drawable/rounder"
+        app:cornerRadius="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_2"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="34dp"
+        android:background="@drawable/rounder2"
+        app:cornerRadius="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/btn_1" />
+
+    <Button
+        android:id="@+id/btn_3"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="34dp"
+        android:background="@drawable/rounder3"
+        app:cornerRadius="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/btn_2" />
+
+    <ImageView
+        android:id="@+id/img_dots1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/dots"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_1"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/img_dots2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:visibility="invisible"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/dots"
+        app:layout_constraintLeft_toLeftOf="@id/btn_2"
+        app:layout_constraintTop_toBottomOf="@+id/btn_2"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/img_dots3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/dots"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="@id/btn_3"
+        app:layout_constraintTop_toBottomOf="@+id/btn_3"
+        tools:ignore="ContentDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
